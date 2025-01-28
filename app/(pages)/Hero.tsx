@@ -5,20 +5,20 @@ import Image from 'next/image';
 const Hero = () => {
     return (
         <>
-            <div className="absolute inset-0 bg-[#e5e5e5]">
-                <div className="absolute inset-0 bg-black
+            <div className="absolute inset-0 lg:bg-[#e5e5e5] md:bg-black sm:bg-black ">
+                <div className="absolute inset-0 lg:bg-black md:bg-[#e5e5e5] sm:bg-[#e5e5e5]
                 lg:[clip-path:polygon(55%_0,100%_0,100%_100%,35%_100%)]
-                md:[clip-path:polygon(0%_0,100%_0,100%_100%,0%_100%)]
-                sm:[clip-path:polygon(0%_0,100%_0,100%_100%,0%_100%)]
+                md:[clip-path:polygon(0_80%,100%_57%,100%_100%,0%_100%)]
+                sm:[clip-path:polygon(0_80%,100%_47%,100%_100%,0%_100%)]
                 "
                 />
             </div>
 
-            <div className="grid mt-28 grid-cols-1 lg:grid-cols-2 lg:gap-28">
+            <div className="grid lg:mt-28 mt-5 grid-cols-1 lg:grid-cols-2 lg:gap-28">
                 {/* Right content - Image */}
                 <div className="relative flex justify-center align-items-center mt-8 lg:mt-0 order-1 lg:order-2">
                     <Image
-                        src="/heroImage.jpg"
+                        src="/background.png"
                         alt="Image"
                         width={500}
                         height={600}
@@ -27,7 +27,8 @@ const Hero = () => {
                 </div>
 
                 {/* Left content */}
-                <div className="flex flex-col  justify-center z-10 py-12 lg:py-0 order-2 lg:order-1">
+                <div className="lg:relative absolute bottom-0
+                flex flex-col  justify-center z-10 py-12 lg:py-0 order-2 lg:order-1">
                     <p className="text-lg text-gray-600 dark:text-gray-400">Hey Buddy, Myself</p>
                     <h1 className="mt-2 text-4xl font-bold text-gray-900 sm:text-5xl lg:text-6xl">Sarang Ravikumar</h1>
                     <p className="mt-4 text-lg text-gray-600">Full Stack Developer</p>
