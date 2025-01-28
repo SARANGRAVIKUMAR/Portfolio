@@ -9,7 +9,7 @@ import { Constants } from "@/app/utils/constants";
 const Navbar = () => {
     return (
         <>
-            <nav className="absolute mx-8 right-12 top-8 z-10 hidden items-center gap-8 text-white lg:flex">
+            <nav className="absolute lg:mx-8 right-12 top-8 z-10 items-center gap-8 text-white lg:flex">
                 <div className="hidden md:block">
                     <div className="ml-10 flex items-center space-x-10">
                         {/* Add style when hovered for nav links  */}
@@ -29,7 +29,7 @@ const Navbar = () => {
                     <NavbarButton />
                 </div>
             </nav>
-            <div className="md:hidden">
+            <div className="text md:hidden white z-10">
                 <div className="ml-10 flex flex-col items-center space-x-4">
                     {Object.keys(Constants.navbarList).map((key) => (
                         <Link
