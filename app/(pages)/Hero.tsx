@@ -16,10 +16,10 @@ const Hero = () => {
 
             <div className="grid mt-28 grid-cols-1 lg:grid-cols-2 lg:gap-28">
                 {/* Right content - Image */}
-                <div className="relative flex justify-center align-items-center z-10 mt-8 lg:mt-0 order-1 lg:order-2">
+                <div className="relative flex justify-center align-items-center mt-8 lg:mt-0 order-1 lg:order-2">
                     <Image
-                        src=""
-                        alt=""
+                        src="/heroImage.jpg"
+                        alt="Image"
                         width={500}
                         height={600}
                         // className="mx-auto object-cover lg:mx-0"
