@@ -5,16 +5,16 @@ import Image from 'next/image';
 const Hero = () => {
     return (
         <>
-            {/* <div className="absolute inset-0 bg-[#e5e5e5]">
+            <div className="absolute inset-0 bg-[#e5e5e5]">
                 <div className="absolute inset-0 bg-black
                 lg:[clip-path:polygon(55%_0,100%_0,100%_100%,35%_100%)]
                 md:[clip-path:polygon(0%_0,100%_0,100%_100%,0%_100%)]
                 sm:[clip-path:polygon(0%_0,100%_0,100%_100%,0%_100%)]
                 "
                 />
-            </div> */}
+            </div>
 
-            <div className="grid lg:mt-8 grid-cols-1 lg:grid-cols-2 lg:gap-28">
+            <div className="grid mt-28 grid-cols-1 lg:grid-cols-2 lg:gap-28">
                 {/* Right content - Image */}
                 <div className="relative flex justify-center align-items-center z-10 mt-8 lg:mt-0 order-1 lg:order-2">
                     <Image
