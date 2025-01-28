@@ -9,7 +9,7 @@ const Hero = () => {
                 <div className="absolute inset-0 lg:bg-black md:bg-[#e5e5e5] sm:bg-[#e5e5e5]
                 lg:[clip-path:polygon(55%_0,100%_0,100%_100%,35%_100%)]
                 md:[clip-path:polygon(0_80%,100%_57%,100%_100%,0%_100%)]
-                sm:[clip-path:polygon(0_80%,100%_47%,100%_100%,0%_100%)]
+                sm:[clip-path:polygon(0_80%,100%_57%,100%_100%,0%_100%)]
                 "
                 />
             </div>

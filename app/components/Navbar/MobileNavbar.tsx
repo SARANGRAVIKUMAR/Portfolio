@@ -16,7 +16,7 @@ const MobileNavbar = () => {
                 {!isMenuOpen && <CiMenuBurger size={24} />}
             </button>
             <div className={`fixed inset-0 z-50 transform ${isMenuOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"} transition-all duration-500 ease-in-out`}>
-                <div className="flex flex-col bg-black bg-opacity-50">
+                <div className="flex flex-col bg-black bg-opacity-90">
                     <div className="flex items-center justify-end p-6">
                         <button onClick={closeModal} className="rounded-full p-2 text-white">
                             <IoMdClose size={24} />
