@@ -1,6 +1,4 @@
 import Link from "next/link";
-import { CiMenuBurger } from "react-icons/ci";
-import { IoMdClose } from "react-icons/io";
 
 import React from "react";
 import NavbarButton from "./NavbarButton";
