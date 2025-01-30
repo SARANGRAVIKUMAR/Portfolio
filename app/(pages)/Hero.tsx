@@ -47,11 +47,9 @@ const Hero = () => {
                 <div className="container mx-auto py-12">
                     <h2 className="text-2xl font-bold mb-6">ABOUT ME</h2>
                     <p className="text-gray-400 mb-6 max-w-3xl">
-                        I am a passionate Full-Stack Developer with expertise in the MERN stack (MongoDB, Express.js, React, Node.js) and a strong foundation in building scalable, high-performance web applications. With a keen eye for detail and a problem-solving mindset, I specialize in developing efficient, user-friendly, and responsive applications from end to end.
+                        A passionate Full-Stack Developer with expertise in the MERN stack (MongoDB, Express.js, React, Node.js) and a strong foundation in building scalable, high-performance web applications. With a keen eye for detail and a problem-solving mindset, I specialize in developing efficient, user-friendly, and responsive applications from end to end.
                     </p>
-                    <button className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-white bg-transparent text-white hover:bg-white hover:text-black h-10 px-4 py-2">
-                        READ MORE
-                    </button>
+                    {/* TODO Need to add scroll feature to skills section */}
                     <button className=" ml-5 inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-white bg-transparent text-white hover:bg-white hover:text-black h-10 px-4 py-2">
                         <a href="/Sarang_Resume.pdf" download="Sarang Ravikumar Resume"> Download Resume</a>
                     </button>
