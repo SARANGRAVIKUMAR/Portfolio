@@ -43,7 +43,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div className="absolute bottom-0 w-full bg-[#1a1a1a] text-white">
+            <div className="absolute bottom-0 w-full bg-zinc-800 text-white">
                 <div className="container mx-auto py-12">
                     <h2 className="text-2xl font-bold mb-6">ABOUT ME</h2>
                     <p className="text-gray-400 mb-6 max-w-3xl">
