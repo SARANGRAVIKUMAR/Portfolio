@@ -16,8 +16,8 @@ const Hero = () => {
                 <div className="relative container mx-auto h-full">
                     <div className="grid grid-cols-2 h-full items-center">
                         <div className="pr-20">
-                            <p className="text-2xl mb-4">Hey Buddy, I am</p>
-                            <h1 className="text-6xl font-bold mb-4">Sarang Ravikumar</h1>
+                            <p className="text-2xl mb-4 text-zinc-500">Hey Buddy, I&apos;m</p>
+                            <h1 className="text-6xl text-zinc-600 font-bold mb-4">Sarang Ravikumar</h1>
                             <p className="text-xl text-gray-500 mb-2">Full Stack Developer / MERN Stack Developer</p>
                             <div className="flex gap-2">
                                 <a href="#" className="bg-gray-200 p-3 rounded-full hover:bg-gray-300 transition-colors">
