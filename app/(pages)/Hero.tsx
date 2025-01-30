@@ -29,7 +29,6 @@ const Hero = () => {
                             </div>
                         </div>
 
-                        {/* Right Content */}
                         <div className="flex justify-center">
                             <div className="relative w-[600px] h-[800px]">
                                 <Image

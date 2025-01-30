@@ -1,18 +1,34 @@
 import React from "react";
+import Image from 'next/image';
+import CircularProgress from "../components/CircularProgress";
+import { Constants } from "../utils/constants";
 
 const Skills = () => {
     return (
-        <section className="bg-white py-24 sm:py-32">
+        <section className="bg-[#e5e5e5] py-24 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <div className="mx-auto max-w-2xl text-center">
-                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">About Me</h2>
-                    <p className="mt-6 text-lg leading-8 text-gray-600">
-                        I&apos;m a passionate developer with expertise in creating modern web applications. My focus is on building
-                        responsive, user-friendly interfaces using the latest technologies.
-                    </p>
-                    <button className="mt-8 inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-gray-900 bg-transparent text-gray-900 hover:bg-gray-900 hover:text-white h-10 px-4 py-2">
-                        Download CV
-                    </button>
+                <div className="">
+                    <div className="flex items-center justify-center">
+                        <div className="w-1/2">
+                            <h2 className="text-3xl font-bold tracking-tight mb-7 text-gray-900 sm:text-4xl">Skills</h2>
+                            <div className="flex space-x-14 flex-wrap">
+                                {Constants.skills.map((skill) => (
+                                    <CircularProgress value={skill.value} key={skill.key} name={skill.name} />
+                                ))}
+                            </div>
+                        </div>
+                        <div className="w-1/2">
+                            <div className=" from-gray-100 via-transparent to-gray-100 opacity-70">
+                                <Image
+                                    src="/skills.jpg"
+                                    alt="Profile"
+                                    width={500}
+                                    height={500}
+                                />
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
