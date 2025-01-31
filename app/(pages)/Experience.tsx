@@ -12,7 +12,7 @@ const Experience = () => {
                             <div className="md:ml-12">
                                 <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-zinc-100 to-zinc-400 bg-clip-text text-transparent mb-10">Experience</h2>
                                 <ol className="relative md:w-4/5 text-gray-500 border-s border-gray-200 dark:border-gray-700 dark:text-gray-400">
-                                    <li className="mb-10 ms-6 flex justify-between">
+                                    <li className=" ms-6 flex justify-between">
                                         <div>
                                             <span className="absolute flex  items-center justify-center w-4 h-4 bg-green-500 rounded-full -start-2" />
                                             <div className="max-w rounded overflow-hidden shadow-lg bg-zinc-800/50  md:p-6 hover:bg-zinc-700/50 transition-all duration-300 ">

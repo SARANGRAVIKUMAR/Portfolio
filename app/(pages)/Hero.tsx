@@ -61,10 +61,9 @@ const Hero = () => {
                         <a href="https://www.linkedin.com/in/sarang-ravikumar/" target="_blank" className="bg-gray-900 p-3 rounded-full hover:bg-gray-800 transition-colors">
                             <FaLinkedin className="w-6 h-6" />
                         </a>
-                        <a href="mailto:sarangravikumar1999@gmail.com" className="bg-gray-900 p-3 rounded-full hover:bg-gray-800 transition-colors">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sarangravikumar1999@gmail.com" target="_blank" className="bg-gray-900 p-3 rounded-full hover:bg-gray-800 transition-colors">
                             <BiLogoGmail className="w-6 h-6" />
                         </a>
-
                     </div>
                     <div className="flex flex-col md:flex-row gap-4">
                         <button className="px-8 py-3 bg-white/10 hover:bg-white/20 text-white rounded-full 
