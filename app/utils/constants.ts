@@ -11,10 +11,10 @@ export const Constants = {
     },
     skills: [
         { name: "React", key: "react", value: 80 },
-        { name: "Next.js", key: "nextjs", value: 50 },
         { name: "TypeScript", key: "typescript", value: 70 },
         { name: "Mobx", key: "mobx", value: 70 },
-        { name: "Node.js", key: "nodejs", value: 70 },
-        { name: "MongoDB", key: "mongodb", value: 70 }
+        { name: "Node.js", key: "nodejs", value: 80 },
+        { name: "MongoDB", key: "mongodb", value: 70 },
+        { name: "Next.js", key: "nextjs", value: 30 },
     ]
 }
