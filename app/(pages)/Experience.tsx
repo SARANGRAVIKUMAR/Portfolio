@@ -8,17 +8,17 @@ const Experience = () => {
             <div className=" max-w-14xl px-6 lg:px-8">
                 <div className="">
                     <div className="flex  ">
-                        <div className="w-2/3 ">
-                            <div className="ml-12">
+                        <div className="lg:w-2/3 ">
+                            <div className="md:ml-12">
                                 <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-zinc-100 to-zinc-400 bg-clip-text text-transparent mb-10">Experience</h2>
-                                <ol className="relative w-4/5 text-gray-500 border-s border-gray-200 dark:border-gray-700 dark:text-gray-400">
+                                <ol className="relative md:w-4/5 text-gray-500 border-s border-gray-200 dark:border-gray-700 dark:text-gray-400">
                                     <li className="mb-10 ms-6 flex justify-between">
                                         <div>
-                                            <span className="absolute flex items-center justify-center w-4 h-4 bg-green-500 rounded-full -start-2" />
-                                            <div className="max-w rounded overflow-hidden shadow-lg bg-zinc-800/50  p-6 hover:bg-zinc-700/50 transition-all duration-300 ">
-                                                <div className="px-6 py-4">
-                                                    <div className="flex justify-between">
-                                                        <div className="font-bold text-xl mb-2 text-green-500">Travancore Analytics</div>
+                                            <span className="absolute flex  items-center justify-center w-4 h-4 bg-green-500 rounded-full -start-2" />
+                                            <div className="max-w rounded overflow-hidden shadow-lg bg-zinc-800/50  md:p-6 hover:bg-zinc-700/50 transition-all duration-300 ">
+                                                <div className="md:px-6 py-4">
+                                                    <div className="flex flex-col md:flex-row mb-2 justify-between">
+                                                        <div className="font-bold text-xl  text-green-500">Travancore Analytics</div>
                                                         <p className="text-gray-500 text-base">2021-Present</p>
                                                     </div>
                                                     <span className="font-bold text-white text-md mb-2">Senior Software Developer</span>
@@ -43,7 +43,7 @@ const Experience = () => {
                                 </ol>
                             </div>
                         </div>
-                        <div className="w-1/2">
+                        <div className="w-1/2 lg:block hidden">
                             <div className=" from-gray-100 via-transparent to-gray-100 opacity-70">
                                 <Image
                                     src="/experience.jpg"
