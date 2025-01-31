@@ -3,22 +3,12 @@ import { BiLogoGmail } from "react-icons/bi";
 // import Image from "next/image"
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoArrowDown, IoCodeSlashOutline } from "react-icons/io5";
+import JobExperience from "../components/JobExperience";
 
 
 const Hero = () => {
 
-    const getCurrentYearAndMonth = () => {
-        const dPast = 'August 2, 2021';
-        const indicatedD = new Date(dPast);
-        const d = new Date();
-        const elapsed = d.getTime() - indicatedD.getTime();
-        const millisecondsPerYear = 1000 * 60 * 60 * 24 * 365.25;
-        const years = Math.floor(elapsed / millisecondsPerYear);
-        const remainingMilliseconds = elapsed % millisecondsPerYear;
-        const millisecondsPerMonth = 1000 * 60 * 60 * 24 * 30.44;
-        const months = Math.floor(remainingMilliseconds / millisecondsPerMonth);
-        return `${years} yrs ${months} months`
-    }
+
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-black  to-zinc-00">
@@ -50,7 +40,8 @@ const Hero = () => {
 
                     <p className="text-gray-300 max-w-2xl text-base sm:text-lg md:text-lg lg:text-lg xl:text-xl mb-8 leading-relaxed">
                         Crafting digital experiences with clean code and creative solutions.
-                        Specialized in React, Node.js, and MongoDB, with {getCurrentYearAndMonth()} years of
+                        Specialized in React, Node.js, and MongoDB, with <JobExperience />
+                        years of
                         professional experience building scalable applications.
                     </p>
 
