@@ -5,7 +5,7 @@ import { Constants } from "../utils/constants";
 
 const Skills = () => {
     return (
-        <section className="bg-zinc-900 py-24 sm:py-32">
+        <section className="bg-gradient-to-br from-indigo-950 via-gray-900 to-blue-950 py-24 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="">
                     <div className="flex items-center justify-center gap-10">

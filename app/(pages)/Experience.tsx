@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Experience = () => {
     return (
-        <section className="bg-zinc-800 py-24 sm:py-32">
+        <section className="bg-gradient-to-br from-indigo-950 via-gray-800 to-blue-950 py-24 sm:py-32">
             <div className=" max-w-14xl px-6 lg:px-8">
                 <div className="">
                     <div className="flex  ">

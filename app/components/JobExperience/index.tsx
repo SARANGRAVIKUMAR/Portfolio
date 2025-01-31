@@ -17,20 +17,24 @@ const JobExperience = () => {
     const count = useMotionValue(0);
     const totalMonths = getTotalMonthsOfExperience();
 
-    const experience = useTransform(count, (value) => {
+    const jobDescription = useTransform(count, (value) => {
         const years = Math.floor(value / 12);
         const months = Math.floor(value % 12);
-        return `${years} yrs ${months} months`;
+        const description = ` Crafting digital experiences with clean code and creative solutions.
+                        Specialized in React, Node.js, and MongoDB, with  ${years} yrs ${months} months  of professional
+                        experience building scalable applications.`
+        return description;
     });
 
     useEffect(() => {
-        const controls = animate(count, totalMonths, { duration: 1, ease: "easeOut" });
+        const controls = animate(count, totalMonths, { duration: 3, ease: "easeOut" });
         return () => controls.stop();
     }, [count, totalMonths]);
 
     return (
         <motion.div>
-            <motion.span>{experience}</motion.span>
+            <motion.span>
+                {jobDescription}</motion.span>
         </motion.div>
     );
 };
