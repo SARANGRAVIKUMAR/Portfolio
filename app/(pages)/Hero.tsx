@@ -2,7 +2,7 @@
 import React from "react"
 import { BiLogoGmail } from "react-icons/bi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { IoArrowDown, IoCodeSlashOutline } from "react-icons/io5";
+import { IoCodeSlashOutline } from "react-icons/io5";
 import JobExperience from "../components/JobExperience";
 
 
