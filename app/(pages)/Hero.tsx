@@ -1,58 +1,65 @@
 import React from "react"
-import Image from 'next/image';
+import { BiLogoGmail } from "react-icons/bi";
+// import Image from "next/image"
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-
+import { IoArrowDown, IoCodeSlashOutline } from "react-icons/io5";
 
 
 const Hero = () => {
     return (
-        <div className="bg-black min-h-screen">
-            <div className="relative h-screen">
-                <div className="absolute inset-0">
-                    <div className="h-full w-1/2 bg-[#e5e5e5]"></div>
-                    <div className="absolute top-0 right-0 h-full w-1/2 bg-black transform -skew-x-12 origin-top"></div>
-            </div>
-
-                <div className="relative container mx-auto h-full">
-                    <div className="grid grid-cols-2 h-full items-center">
-                        <div className="pr-20">
-                            <p className="text-2xl mb-4 text-zinc-500">Hey Buddy, I&apos;m</p>
-                            <h1 className="text-6xl text-zinc-600 font-bold mb-4">Sarang Ravikumar</h1>
-                            <p className="text-xl text-gray-500 mb-2">Full Stack Developer / MERN Stack Developer</p>
-                            <div className="flex gap-2">
-                                <a href="#" className="bg-gray-200 p-3 rounded-full hover:bg-gray-300 transition-colors">
-                                    <FaGithub size={24} />
-                                </a>
-                                <a href="#" className="bg-gray-200 p-3 rounded-full hover:bg-gray-300 transition-colors">
-                                    <FaLinkedin size={24} />
-                                </a>
-                            </div>
+        <div className="min-h-screen bg-gradient-to-br from-black  to-zinc-00">
+            {/* Hero Section */}
+            <div className="container mx-auto px-4 py-20 lg:py-32">
+                <div className="flex flex-col items-center text-center">
+                    <div className="mb-8 relative">
+                        <div className="w-44 h-44 rounded-full border-4 border-white/20 overflow-hidden relative z-10">
+                            <img
+                                src="/heroImage.jpeg"
+                                alt="Profile"
+                                className="w-full h-full object-cover"
+                            />
                         </div>
-
-                        <div className="flex justify-center">
-                            <div className="relative w-[600px] h-[800px]">
-                                <Image
-                                    src="/background.png"
-                                    alt="Profile"
-                                    fill
-                                    className="object-contain"
-                                    priority
-                                />
-                            </div>
-                        </div>
+                        <div className="absolute inset-0 bg-gradient-to-r from-gray-500 to-gray-700 rounded-full blur-xl opacity-30 animate-pulse"></div>
                     </div>
-                </div>
-            </div>
-            <div className="absolute bottom-0 w-full bg-zinc-800 text-white">
-                <div className="container mx-auto py-12">
-                    <h2 className="text-2xl font-bold mb-6">ABOUT ME</h2>
-                    <p className="text-gray-400 mb-6 max-w-3xl">
-                        A passionate Full-Stack Developer with expertise in the MERN stack (MongoDB, Express.js, React, Node.js) and a strong foundation in building scalable, high-performance web applications. With a keen eye for detail and a problem-solving mindset, I specialize in developing efficient, user-friendly, and responsive applications from end to end.
+                    <h1 className="text-lg sm:text-xl md:text-xl lg:text-2xl font-bold mb-4 text-gray-400 tracking-tight">
+                        Hey Buddy I&apos;m
+                    </h1>
+                    <h1 className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-bold text-white mb-4 tracking-tight">
+                        Sarang Ravikumar
+                    </h1>
+                    <div className="flex items-center gap-3 mb-6">
+                        <IoCodeSlashOutline className="text-md sm:text-md md:text-lg lg:text-xl text-gray-300 font-medium" />
+                        <h2 className="text-md sm:text-md md:text-lg lg:text-xl text-gray-300 font-medium">
+                            MERN Stack Developer
+                        </h2>
+                    </div>
+
+                    <p className="text-gray-300 max-w-2xl text-base sm:text-lg md:text-lg lg:text-lg xl:text-xl mb-8 leading-relaxed">
+                        Crafting digital experiences with clean code and creative solutions.
+                        Specialized in React, Node.js, and cloud architecture with 3 years of
+                        professional experience building scalable applications.
                     </p>
-                    {/* TODO Need to add scroll feature to skills section */}
-                    <button className=" ml-5 inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-white bg-transparent text-white hover:bg-white hover:text-black h-10 px-4 py-2">
-                        <a href="/Sarang_Resume.pdf" download="Sarang Ravikumar Resume"> Download Resume</a>
-                    </button>
+
+                    <div className="flex gap-6 mb-12">
+                        <a href="https://github.com/SARANGRAVIKUMAR" target="_blank" className="bg-gray-900 p-3 rounded-full hover:bg-gray-800 transition-colors">
+                            <FaGithub className="w-6 h-6" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/sarang-ravikumar/" target="_blank" className="bg-gray-900 p-3 rounded-full hover:bg-gray-800 transition-colors">
+                            <FaLinkedin className="w-6 h-6" />
+                        </a>
+                        <a href="mailto:sarangravikumar1999@gmail.com" className="bg-gray-900 p-3 rounded-full hover:bg-gray-800 transition-colors">
+                            <BiLogoGmail className="w-6 h-6" />
+                        </a>
+
+                    </div>
+                    <div className="flex flex-col md:flex-row gap-4">
+                        <button className="px-8 py-3 bg-white/10 hover:bg-white/20 text-white rounded-full 
+            font-medium transition-all duration-200 border border-white/20 hover:border-white/40
+            flex items-center gap-4 group">
+                            Know More
+                            <IoArrowDown className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
